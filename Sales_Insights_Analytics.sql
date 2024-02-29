@@ -1,4 +1,4 @@
-/*Shows record of all customer*/ 
+/*Shows record of all customers*/ 
 SELECT * 
 FROM customers;
 
@@ -14,11 +14,16 @@ WHERE market_code='Mark001';
 /*Shows total no. of transactions for Chennai market*/
 SELECT COUNT(*) 
 FROM transactions 
-WHERE market_code='Mark001'
+WHERE market_code='Mark001';
 
-/*Show distrinct product codes that were sold in Chennai*/
+/*Show distinct product codes that were sold in Chennai*/
 SELECT DISTINCT product_code 
 FROM transactions 
+WHERE market_code='Mark001';
+
+/*Shows total no. of distinct product codes that were sold in Chennai*/
+SELECT COUNT(DISTINCT product_code) 
+FROM transactions
 WHERE market_code='Mark001';
 
 /*Show transactions where currency is US Dollars*/
