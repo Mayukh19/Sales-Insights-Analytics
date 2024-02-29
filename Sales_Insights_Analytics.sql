@@ -11,6 +11,11 @@ SELECT *
 FROM transactions 
 WHERE market_code='Mark001';
 
+/*Shows total no. of transactions for Chennai market*/
+SELECT COUNT(*) 
+FROM transactions 
+WHERE market_code='Mark001'
+
 /*Show distrinct product codes that were sold in Chennai*/
 SELECT DISTINCT product_code 
 FROM transactions 
